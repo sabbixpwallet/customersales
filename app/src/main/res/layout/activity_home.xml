@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llSearchArea"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/leyCustomer"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_marginRight="1dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Customer Data"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leyMonth"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@color/grey_300"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtMonthsales"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Monthly Sale"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leyFilter"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_marginLeft="1dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Filter"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/framecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+</layout>
